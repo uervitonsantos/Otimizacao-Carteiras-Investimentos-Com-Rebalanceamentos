@@ -1,2 +1,15 @@
-# Otimizacao-Carteiras-Investimentos-Com-Rebalanceamentos
-Otimização de Carteiras de Investimentos com Rebalanceamentos
+# Aplicação de Modelos de Confiabilidade e Metaheurísticas na Otimização de Carteiras de Investimentos com Rebalanceamentos relacionados ao risco
+
+**Objetivo**
+
+O objetivo do trabalho é desenvolver e validar uma metodologia para a otimização de carteiras de investimento, com foco na identificação da necessidade e nos valores ótimos dos rebalanceamentos dos ativos. A proposta envolve a modelagem da ocorrência de eventos de mercado que possam impactar significativamente os preços dos ativos, bem como notas de agência de avaliação. O estudo será realizado utilizando Modelos de Sobrevivência baseados na Distribuição de Weibull com Frailty, a fim de capturar riscos externos não observáveis, como notícias inesperadas e decisões governamentais. Os dados serão extraídos em 3 arquivos csv diferentes, o primeiro direto de uma base da B3, que será o relatório consolidado da carteira de investimentos. O segundo será extraído da api da Brapi com os dados dos ativos. E o terceiro de alguma agência de avaliação (ainda em avaliação). Os parâmetros dos modelos serão estimados utilizando a função de Máxima Verossimilhança, garantindo o ajuste adequado aos dados históricos das séries de preços dos ativos. A partir da modelagem dos eventos, pretende-se determinar, por meio de Otimização Bayesiana, os pontos ótimos de rebalanceamento dos ativos da carteira, considerando informações como preço atual, preço médio, número de ações, valor total investido em cada ativo e valor total investido na carteira. Os dados serão extraídos em um 3 arquivo csv direto de uma base da B3. Além disso, será realizada a otimização multiobjetiva da carteira empregando os algoritmos NSGA-II (Non-dominated Sorting Genetic Algorithm II) e MOPSO (Multi-Objective Particle Swarm Optimization), visando simultaneamente: • Maximizar o retorno esperado, • Minimizar o risco da carteira, • Minimizar os custos associados aos rebalanceamentos. Por fim, será conduzida uma análise comparativa entre as abordagens propostas, com a avaliação de métricas de qualidade de soluções multiobjetivas (como hipervolume, spread e IGD) e comparação com estratégias tradicionais de rebalanceamento periódico, buscando evidenciar as vantagens e limitações da metodologia em cenários práticos.
+
+**Objetivo Específico**
+
+* Modelar a ocorrência de eventos de mercado que possam afetar significativamente os preços dos ativos, utilizando Modelos de Sobrevivência baseados na Distribuição de Weibull com Frailty para capturar riscos não observáveis.
+
+* Utilizar Otimização Bayesiana por meio da biblioteca Optuna para determinar os pesos ótimos dos ativos na carteira, considerando o retorno esperado, risco e custos de rebalanceamento.
+
+* Implementar a otimização multiobjetiva da carteira utilizando os algoritmos NSGA-II (Non-dominated Sorting Genetic Algorithm II) e MOPSO (Multi-Objective Particle Swarm Optimization) para maximizar o retorno esperado, minimizar o risco da carteira e os custos associados aos rebalanceamentos.
+
+* Realizar uma análise comparativa entre as abordagens propostas (Otimização Bayesiana com Optuna, NSGA-II e MOPSO), avaliando as soluções geradas através de métricas de qualidade multiobjetiva, como hipervolume, spread e IGD, e comparando com estratégias tradicionais de rebalanceamento periódico.
