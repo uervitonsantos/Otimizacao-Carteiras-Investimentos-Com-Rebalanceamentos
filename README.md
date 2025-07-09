@@ -32,7 +32,3 @@ O desenvolvimento da metodologia é conduzido exclusivamente com o NSGA-II, não
 * Maximizar o retorno esperado da carteira;
 * Minimizar o risco dos ativos;
 * Reduzir os custos relacionados aos rebalanceamentos.
-
-* Visualizar a fronteira de Pareto tridimensional, destacando as soluções mais relevantes, como o ponto de maior retorno e o ponto ideal de equilíbrio entre retorno, risco e custo.
-
-* Conduzir o estudo exclusivamente com o algoritmo NSGA-II, sem realizar comparações com outras técnicas ou algoritmos de otimização.
